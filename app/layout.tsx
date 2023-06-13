@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import "./global.css";
 
 export default function RootLayout({
   children,
@@ -8,7 +10,15 @@ export default function RootLayout({
   return (
     <html>
       <head></head>
-      <body>{children}</body>
+      <body>
+        <main>
+          <nav>
+            <Link href="/">Home</Link>
+            <Link href="/notes">Notes</Link>
+          </nav>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
