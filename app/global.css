@@ -19,3 +19,16 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  font-weight: bold;
+  margin: 0 0.5rem;
+  text-decoration: underline;
+}
